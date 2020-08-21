@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>PuzzleGame</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script type="text/javascript" src="map/square5x5.js"></script>
+  <script type="text/javascript" src="map/square10x10.js"></script>
+  <script type="text/javascript" src="map/square15x15.js"></script>
+  <script type="text/javascript" src="script/AddElement.js"></script>
+  <script type="text/javascript" src="script/Init.js"></script>
+  <script type="text/javascript" src="script/Draw.js"></script>
+  <script type="text/javascript" src="script/Move.js"></script>
+  <script type="text/javascript" src="script/Main.js"></script>
+</head>
+
+<body>
+  <div id="display">
+  </div>　
+
+
+  <button id="up" onclick="Buttonclick(this)">up </button>
+  <button id="down" onclick="Buttonclick(this)">down</button>
+  <button id="left" onclick="Buttonclick(this)">left</button>
+  <button id="right" onclick="Buttonclick(this)">right</button>
+  <button id="mark" onclick="Buttonclick(this)">mark</button>
+  <button id="paint" onclick="Buttonclick(this)">paint</button>
+
+<canvas id="canvas" width="600" height="600" style="border:solid black 1px;">
+  Your browser does not support canvas element.
+</canvas>
+<br>
+Log: <pre id="log" style="border: 1px solid #ccc;"></pre>
+</body>
+</html>
+

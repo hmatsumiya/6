@@ -1,0 +1,67 @@
+:root {
+    --cellsize: 24px;
+}
+
+.top_cont {
+    display: flex;
+    flex-direction: row;
+}
+
+.second_cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.third_cont {
+    display: flex;
+    flex-direction: row;
+}
+
+.cell {
+    width: var(--cellsize);
+    height: var(--cellsize);
+    border: solid 1px #757575;
+    border-collapse: collapse;
+}
+
+.cell--dummy {
+    border: solid 1px #00000000;
+}
+
+.cell--number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #9E9E9E;
+}
+
+.cell--fill {
+    background: #424242;
+}
+
+.cell--empty {
+    background: #FFFFFF;
+}
+
+.cell--ignore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+}
+
+.cursor {
+    border: solid 1px #00FF00;
+    filter: drop-shadow(0px 0px 3px #00FF00);
+}
+.button{
+  border-radius: 2px;
+  background-color: green;
+  padding: 2px;
+  text-align: center;
+  color: white;
+  height: 15px;
+  margin: 5px;
+}
+
+}
